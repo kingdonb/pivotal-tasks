@@ -1,6 +1,11 @@
 require_relative 'boot'
 
 require "rails"
+
+# manage secrets with dotenv
+require 'dotenv'
+Dotenv.load '.env.local', ".env.#{Rails.env}"
+
 # Pick the frameworks you want:
 require "active_model/railtie"
 require "active_job/railtie"
