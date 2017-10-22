@@ -4,7 +4,7 @@ class MyDashboardController < ApplicationController
   before_action :connect_pivotal_api
 
   def index
-    binding.pry
+    #binding.pry
   end
 
   private
