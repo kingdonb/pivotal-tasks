@@ -30,6 +30,7 @@ This project is intended to provide a dashboard and GTD interface to tasks.
 
 * Configuration
     Set environment variables:
+```
 DB_PASSWORD=secret
 DB_USER=pivotal_tasks_database_user
 DB_HOST=[ip address]
@@ -38,6 +39,7 @@ DB_PORT=5432
 PIVOTAL_API_KEY=00000000000000000000000000000000
 PIVOTAL_PROJECT=k
 PORT=5000
+```
 
 * Database creation
     rake db:migrate:status
