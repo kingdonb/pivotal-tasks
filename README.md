@@ -56,9 +56,11 @@ PORT=5000
 * Deployment instructions
     To send your checkout to Workflow, set environment variables in .env
 
+    ```
     deis create
     deis config:push
     git push deis
+    ```
 
 * ...
     NB: for Deis Workflow, values in .buildpacks and Procfile were set.
