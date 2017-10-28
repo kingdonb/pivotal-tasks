@@ -21,7 +21,7 @@ guaranteed and quantified through the API.
 
 This project is intended to provide a dashboard and GTD interface to tasks.
 
-* Ruby version: ruby-2.3.4
+* Ruby version: ruby-2.3.5
 
 * System dependencies:
   * PostgreSQL Database
