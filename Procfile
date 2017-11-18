@@ -1,1 +1,1 @@
-web: bin/runsvdir-dyno
+web: .sw/sbin/runit
