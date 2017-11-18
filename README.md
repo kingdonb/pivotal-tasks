@@ -36,6 +36,7 @@ DATABASE_URL=postgres://pivotal_tasks:[secret]@deis-database.deis.svc.cluster.lo
 PIVOTAL_API_KEY=00000000000000000000000000000000
 PIVOTAL_PROJECT=k
 PORT=5000
+DYNO=web
 ```
 
 * Database creation
