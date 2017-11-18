@@ -1,1 +1,1 @@
-web: .sw/sbin/runit
+web: .sw/sbin/runit .service.web/
