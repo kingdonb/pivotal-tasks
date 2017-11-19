@@ -3,3 +3,5 @@
 <%= render 'task_group', group_name: 'incomplete_tasks', tasks: @incomplete_current_tasks %>
 
 <%= render 'task_group', group_name: 'completed_tasks', tasks: @completed_current_tasks %>
+
+<%= link_to "Go to Orphaned Tasks", "/orphaned" %>

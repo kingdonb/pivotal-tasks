@@ -1,0 +1,7 @@
+<h1>Orphaned Tasks</h1>
+
+<%= render 'task_group', group_name: 'incomplete_tasks', tasks: @incomplete_orphaned_tasks %>
+
+<%#= render 'task_group', group_name: 'completed_tasks', tasks: @completed_orphaned_tasks %>
+
+<%= link_to "Go to Current Tasks", root_path %>

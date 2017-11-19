@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'my_dashboard/index'
+  get '/orphaned', to: 'my_dashboard#orphaned'
 
   get '/ping', to: 'application#ping', defaults: { :format => 'json' }
 
