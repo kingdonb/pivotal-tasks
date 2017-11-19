@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   private
   def show_response( type, message, status )
     status ||= 200
-    msg = {"errors" => { type => {"base:" => message } }}
+    msg = {"errors" => { type => {"base" => message } }}
     respond_to do |format|
       format.xml  { render xml:  msg, status: status }
       format.json  { render json: msg, status: status }
