@@ -1,2 +1,5 @@
-<h1>MyDashboard#index</h1>
-<p>Find me in app/views/my_dashboard/index.html.erb</p>
+<h1>Pivotal Tasks</h1>
+
+<%= render 'task_group', group_name: 'incomplete_tasks', tasks: @incomplete_current_tasks %>
+
+<%= render 'task_group', group_name: 'completed_tasks', tasks: @completed_current_tasks %>

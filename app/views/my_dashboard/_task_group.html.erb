@@ -1,0 +1,10 @@
+<h3><%= group_name.titleize %></h3>
+<% if tasks.any? %>
+  <ul><%
+    tasks.each do |t| %>
+    <%= render 'task', task: t %>
+    <% end
+  %></ul>
+<% else %>
+  <p>No <%= group_name.humanize(capitalize: false) %> in the current iteration.</p>
+<% end %>
