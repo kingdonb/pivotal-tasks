@@ -26,6 +26,7 @@ class MyDashboardController < ApplicationController
     self.planned_stories   = project.stories(fields: ':default,tasks', with_state: 'planned')
     self.started_stories   = project.stories(fields: ':default,tasks', with_state: 'started')
     self.open_stories      = [delivered_stories, finished_stories, planned_stories, started_stories].flatten
+    #self.open_stories      = [delivered_stories, planned_stories, started_stories].flatten
     self.open_story_tasks  = open_stories.map(&:tasks).flatten.partition{|t| t.complete}
     self.completed_current_tasks = open_story_tasks[0]
     self.incomplete_current_tasks = open_story_tasks[1]

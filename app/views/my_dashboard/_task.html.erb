@@ -1,1 +1,6 @@
-<li><%= "Story ##{task.story_id}:" %> <span><%= task.description %></span> <%= "(#{task.kind}: ##{task.id})" %></li>
+<li>
+  <%=
+  link_to "https://www.pivotaltracker.com/story/show/#{task.story_id}" do -%>
+    <%= "Story ##{task.story_id}" -%><%
+  end %>:<br/>
+  <span><%= task.description %></span> <%= "(#{task.kind}: ##{task.id})" %></li>
