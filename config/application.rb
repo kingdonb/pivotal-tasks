@@ -32,5 +32,6 @@ module PivotalTasks
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.rack_cas.server_url = ENV.fetch('DEVELOPMENT_CAS_URL')
   end
 end

@@ -124,6 +124,10 @@ GEM
     public_suffix (3.0.0)
     puma (3.10.0)
     rack (2.0.3)
+    rack-cas (0.16.0)
+      addressable (~> 2.3)
+      nokogiri (~> 1.5)
+      rack (>= 1.3)
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
     rails (5.1.4)
@@ -252,6 +256,7 @@ DEPENDENCIES
   pg (~> 0.18)
   pry
   puma (~> 3.7)
+  rack-cas
   rails (~> 5.1.4)
   rspec-rails (~> 3.6)
   sass-rails (~> 5.0)
