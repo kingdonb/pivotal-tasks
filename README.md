@@ -66,6 +66,8 @@ DEVELOPMENT_CAS_URL=http://faker.kube.nerdland.info/
     ```
     deis create
     deis config:push
+    deis healthchecks:set liveness httpGet 5000 --path /ping --type web
+    deis healthchecks:set readiness httpGet 5000 --path /ping --type web
     git push deis
     ```
 
