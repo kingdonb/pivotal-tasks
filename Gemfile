@@ -11,6 +11,7 @@ gem 'tracker_api'
 gem 'dotenv'
 gem 'rack-cas'
 gem 'foundation-rails'
+gem 'jquery-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
@@ -57,6 +58,7 @@ gem 'jbuilder', '~> 2.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry'
   gem 'awesome_print', require: 'ap'
+  gem 'rails_layout'
 #end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
