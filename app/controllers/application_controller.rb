@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :authenticate, except: :ping
-  before_action :user_login
+  before_action :user_login, except: :ping
 
   def authenticate
     #render status: 401, html: "<p>redirect to CAS</p>".html_safe unless request.session.key?("cas")
