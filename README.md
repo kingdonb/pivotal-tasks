@@ -36,19 +36,29 @@ DATABASE_URL=postgres://pivotal_tasks:[secret]@deis-database.deis.svc.cluster.lo
 PIVOTAL_API_KEY=00000000000000000000000000000000
 PIVOTAL_PROJECT=k
 PORT=5000
+DEVELOPMENT_CAS_URL=http://faker.kube.nerdland.info/
 ```
 
 * Database creation
+```
     rake db:migrate:status
+```
 
 * Database initialization
+```
     rake db:migrate
+```
 
 * How to run the test suite
+```
     bundle exec rspec
+```
 
 * Services (job queues, cache servers, search engines, etc.)
-    N/A
+    You need a CAS service to provide authentication of users.  Check out
+    http://casino.rbcas.com/ to get an idea of how to put one together.
+
+    I decided to make mine based on https://github.com/rbCAS/CASinoApp
 
 * Deployment instructions
     To send your checkout to Workflow, set environment variables in .env
